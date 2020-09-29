@@ -27,13 +27,13 @@ env:
 on:
   schedule:
     - cron: 0 8 */5 * *
-#  release:
-#    types: published
-#  push:
-#    branches:
-#      - master
-#    paths:
-#      - '.config'
+  release:
+    types: published
+  push:
+    branches:
+      - master
+    paths:
+      - '.config'
   watch:
     types: started
   repository_dispatch:
