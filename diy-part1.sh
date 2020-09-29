@@ -24,4 +24,4 @@ git clone https://github.com/kenzok8/small.git  package/openwrt-small
 sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 
 # 删除默认argon主题，并下载新argon主题
-rm -rf ./package/lean/luci-theme-argon
+#rm -rf ./package/lean/luci-theme-argon
