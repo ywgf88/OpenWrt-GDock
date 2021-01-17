@@ -15,7 +15,7 @@ sed -i 's/192.168.1.1/10.10.10.8/g' package/base-files/files/bin/config_generate
 sed -i 's/OpenWrt/William-GDock/g' package/base-files/files/bin/config_generate
 
 #Modify the kernel to 5.4:
-sed -i 's/KERNEL_PATCHVER:=4.19/KERNEL_PATCHVER:=5.4/g' target/linux/ipq40xx/Makefile
+#sed -i 's/KERNEL_PATCHVER:=4.19/KERNEL_PATCHVER:=5.4/g' target/linux/ipq40xx/Makefile
 
 # Modify the version number
 sed -i "s/OpenWrt /William build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
