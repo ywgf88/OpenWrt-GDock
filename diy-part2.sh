@@ -32,6 +32,11 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon-18.06/g' feeds/luci/collections/
 [ -z $(grep "CONFIG_KERNEL_BUILD_DOMAIN=" .config) ] &&
     echo 'CONFIG_KERNEL_BUILD_DOMAIN="GitHub Actions"' >>.config ||
     sed -i 's@\(CONFIG_KERNEL_BUILD_DOMAIN=\).*@\1$"GitHub Actions"@' .config
+  
+#删除luci-app-smartdns  
+rm -rf ./package/lean/luci-app-smartdns
+rm -rf ./feeds/kenzo/luci-app-smartdns
+rm -rf package/litte/luci-app-smartdns && rm -rf package/litte/smartdns
     
     
 # 删除默认argon主题，并下载新argon主题
